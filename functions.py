@@ -19,13 +19,13 @@ class SubjectCountZeroError(Exception):
 class MarksOfStudents:
 
 	def __init__(self):
-		self.subject_count = int(input("How many subjects do you have? "))
+		self.subject_count = int(input("How many subjects do you have?: "))
 		self.marks_list = []
 		if self.subject_count == 0:
 			raise SubjectCountZeroError("subject count is zero")
 		elif self.subject_count >= 4:
 			for _ in range(self.subject_count):
-				mark = int(input("Enter your marks "))
+				mark = int(input("Enter your marks: "))
 				if mark > 100:
 					raise MarksHighError("marks are too high")
 				elif mark < 0:
