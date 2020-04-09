@@ -1,15 +1,4 @@
 
-# def total_marks_array(n):
-#     return sum(n)
-#
-#
-# def percent_marks_array(n, u):
-#     return n // u
-#
-#
-# def grade_marks_array(n):
-#     return grade(n)
-
 
 class MarksHighError(Exception):
 	pass
